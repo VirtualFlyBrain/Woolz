@@ -21,7 +21,8 @@ export MA=/disk/data/VFBTools/Woolz.compiled/
 
 # The default build; optimised, using openmp and external file formats.
 # This requires jpeg, nifti and tiff libraries.
-./configure --prefix=$MA --enable-optimise --enable-openmp --enable-extff --with-nifti=$MA --with-jpeg=$MA --with-tiff=$MA --enable-test
+#./configure --prefix=$MA --enable-optimise --enable-openmp --enable-extff --with-nifti=$MA --with-jpeg=$MA --with-tiff=$MA --enable-test
+./configure --prefix=$MA --enable-optimise --enable-openmp --enable-extff --with-jpeg=$MA --with-tiff=$MA --enable-test
 
 # Build the core Woolz code unoptimised with debug support.
 # This requires only standard system libraries.
