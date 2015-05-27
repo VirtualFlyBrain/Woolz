@@ -12,7 +12,8 @@ autoreconf
 
 #export MA=$HOME
 #export MA=$HOME/MouseAtlas/Build/
-export MA=/opt/MouseAtlas
+# export MA=/opt/MouseAtlas
+export MA=/disk/data/VFBTools/Woolz.compiled/
 
 # Build; with debug and external file formats.
 # This requires jpeg, nifti and tiff libraries.
