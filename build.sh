@@ -13,7 +13,7 @@ autoreconf -i --force
 #export MA=$HOME
 #export MA=$HOME/MouseAtlas/Build/
 # export MA=/opt/MouseAtlas
-export MA=/disk/data/VFBTools/Woolz.compiled/
+export MA=/disk/data/VFBTools/Woolz2015/
 
 # Build; with debug and external file formats.
 # This requires jpeg, nifti and tiff libraries.
@@ -22,7 +22,7 @@ export MA=/disk/data/VFBTools/Woolz.compiled/
 # The default build; optimised, using openmp and external file formats.
 # This requires jpeg, nifti and tiff libraries.
 #./configure --prefix=$MA --enable-optimise --enable-openmp --enable-extff --with-nifti=$MA --with-jpeg=$MA --with-tiff=$MA --enable-test
-./configure --prefix=$MA --enable-optimise --enable-openmp --enable-extff --with-jpeg=$MA --with-tiff=$MA --enable-test
+./configure --prefix=$MA --enable-optimise --enable-openmp --enable-extff --with-jpeg=$MA --with-tiff=$MA --with-nifti=$MA --with-pic --enable-static
 
 # Build the core Woolz code unoptimised with debug support.
 # This requires only standard system libraries.
